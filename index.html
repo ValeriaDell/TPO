@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacé Limonada - TPO</title>
+	<meta name="viewport" content="width=device-width , initial-scale=1" >
+    <!-- CSS-->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="img/Hacé limonada Logo.ico">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Hacé Limonada</h1>
+            <p>Cuadernos | Agendas | Recetarios</p>
+            <p>&#9995 Hechos a mano &#9995</p>
+        </div>
+        <div class="Banner">
+            <section class="menu-section">
+                <nav class="menu-simple menu">
+                    <ul>
+                        <li><a href="index.html">Historia</a></li>
+                        <li><a href="Productos Destacados.html">Productos Destacados</a></li>
+                        <li><a href="envíos.html">Envíos</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>	
+            <div id="frase">
+                    Si la vida te da limones, ¡HACÉ LIMONADA!
+            </div>
+            </section>
+    </header>
+
+    <main> 
+        <h2>Historia</h2>
+            <p>Hacé Limonada nace en Buenos Aires, en pandemia, a partir de un deseo pospuesto que ahora nos encontraba con tiempo disponible para explorar. De allí su nombre: estábamos en una situación desconocida, nueva y preocupante para todos, pero estábamos dispuestos a sacar lo mejor posible de ella, a exprimir los limones, ponerle algo de dulzor y hacer limonada. Gracias a ustedes, este sueño se transformó en un éxito rotundo muy rápidamente</p>
+<br>
+        <h2>¿Dónde estamos?</h2>
+            <p>Nos encontramos en Buenos Aires, pero realizamos envíos a todo el país a través de Correo Argentino</p> 
+<br>
+        <h2>¿Cómo comprar?</h2>
+            <p>Al ser todos los productos personalizados y hechos a mano, te pedimos llenes <a href="Contacto.html">este formulario</a> para que podamos acordar el modelo que buscás, las especifícaciones, método de envío y su valor. </p>
+        <br><br>
+        <h4>Para una mejor experiencia de compra, seleccioná tu ubicación     <button onclick="getLocation()">Aquí</button></h4>
+
+        <p id="demo"></p>
+
+        <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+        }
+
+        function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+        }
+        </script>
+   </main>
+
+    <footer>
+        <div class="footer">
+            <div class="centrado">
+                <h4>Diseñada por Valeria Dell'Arciprete y María Funes</h4>
+                <h4>2023 - Todos los derechos reservados.</h4>
+             </div>          
+        </div>
+    </footer>
+
+</body>
+</html>
