@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacé Limonada - TPO</title>
+	<meta name="viewport" content="width=device-width , initial-scale=1" >
+    <!-- CSS-->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="img/Hacé limonada Logo.ico">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Hacé Limonada</h1>
+            <p>Cuadernos | Agendas | Recetarios</p>
+            <p>&#9995 Hechos a mano &#9995</p>
+        </div>
+        <div class="Banner">
+            <section class="menu-section">
+                <nav class="menu-simple menu">
+                    <ul>
+                        <li><a href="index.html">Historia</a></li>
+                        <li><a href="Productos Destacados.html">Productos Destacados</a></li>
+                        <li><a href="envíos.html">Envíos</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>	
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <div class="centrado">
+            <h1>Formulario de Contacto</h1>
+        </div>
+        <form name=myForm action="">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <label for="Nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" size="30" maxlength="20" required>
+
+                <label for="apellido">Apellido: </label>
+                <input type="text" name="Apellido:" id="Apellido" placeholder="Apellido" size="30" maxlength="20" required>
+
+                <label for="dni">DNI:</label>
+                <input type="number" placeholder="Sólo números">
+
+                <label for="teléfono">Teléfono: </label>
+                <input type="number" minlength="10">
+<br>
+                <label for="mail">Mail: </label>
+                <input type="email">
+
+                <!-- Debe ser mayor de 18 años -->
+                <label for="fecha de nacimiento">Fecha de Nacimiento: </label>
+                <input type="date" min="1923-01-01" max="2005-05-28">
+
+                <label for="foto">Adjunte Archivo</label>
+                <input type="file">
+
+            </fieldset>
+            <br>
+            <fieldset>
+
+                <label for="tipo">Motivo de contacto</label>
+                <select name="tipo" id="tipo">
+                    <option value="P" selected>Pedido</option>
+                    <option value="C">Consulta</option>
+                    <option value="R">Reclamo</option>
+                    <option value="O">Otros</option>
+                </select>   
+            <br>
+                <label for="producto">Producto: </label>
+                <input type="checkbox" name="producto" id="producto">AGENDA
+                <input type="checkbox" name="producto" id="producto">CUADERNO
+                <input type="checkbox" name="producto" id="producto">RECETARIO  
+            <br>
+                <label for="contacto">Medio de contacto preferido</label>
+                <input type="radio" name="contacto" id="teléfono">Teléfono
+                <input type="radio" name="contacto" id="email">Email
+            </fieldset>
+
+            <br>
+                <label for="comentarios">Deje aquí sus comentarios:</label>
+            <br>
+                <textarea name="comentarios" id="comentarios" placeholder="Por favor detallá las especificaciones de tu pedido" cols="100" rows="10"></textarea>
+
+            <br><br>
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Borrar datos">
+        </form>
+        <br><br>
+
+    </main>
+    
+    <footer>
+        <div class="footer">
+            <div class="centrado">
+                <h4>Diseñada por Valeria Dell'Arciprete y María Funes</h4>
+                <h4>2023 - Todos los derechos reservados.</h4>
+             </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
