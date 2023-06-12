@@ -1,79 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacé Limonada - TPO</title>
-	<meta name="viewport" content="width=device-width , initial-scale=1" >
-    <!-- CSS-->
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="icon" href="img/Hacé limonada Logo.ico">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hacé Limonada - TPO</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,400&family=Sacramento&display=swap" rel="stylesheet">
+        <!-- CSS-->
+        <link rel="stylesheet" href="CSS/styles.css">
+        <!-- Favicon -->
+        <link rel="icon" href="img/Hacé limonada Logo.ico">
+    </head>
 
 <body>
-    <header>
+    <div class="grid-container">
+        <div class="banner">Envíos gratis con tu compra mayor a $8000!</div>
+        <div class="asideheader"><img src="img/Hacé limonada Logo.png" alt="Logo Hacé Limonada" width="200px" height="120px"></div>
+
         <div class="header">
             <h1>Hacé Limonada</h1>
-            <p>Cuadernos | Agendas | Recetarios</p>
-            <p>Hechos a mano</p>
+            <h3>Cuadernos | Agendas | Recetarios</h3>
+            <p>Personalizados y hechos a mano</p>
         </div>
-        <div class="Banner">
+
+        <div class="menu">
             <section class="menu-section">
                 <nav class="menu-simple menu">
                     <ul>
-                        <li><a href="index.html">Historia</a></li>
-                        <li><a href="Productos Destacados.html">Productos Destacados</a></li>
+                        <li><a href="index.html">Sobre nosotras</a></li>
+                        <li><a href="productos destacados.html">Productos Destacados</a></li>
                         <li><a href="envíos.html">Envíos</a></li>
-                        <li><a href="Contacto.html">Contacto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                     </ul>
-                </nav>	
-            <div id="frase">
-                    Si la vida te da limones, ¡HACÉ LIMONADA!
-            </div>
-            </section>
-    </header>
-
-    <main> 
-        <h2>Historia</h2>
-            <p>Hacé Limonada nace en Buenos Aires, en pandemia, a partir de un deseo pospuesto que ahora nos encontraba con tiempo disponible para explorar. De allí su nombre: estábamos en una situación desconocida, nueva y preocupante para todos, pero estábamos dispuestos a sacar lo mejor posible de ella, a exprimir los limones, ponerle algo de dulzor y hacer limonada. Gracias a ustedes, este sueño se transformó en un éxito rotundo muy rápidamente</p>
-<br>
-        <h2>¿Dónde estamos?</h2>
-            <p>Nos encontramos en Buenos Aires, pero realizamos envíos a todo el país a través de Correo Argentino</p> 
-<br>
-        <h2>¿Cómo comprar?</h2>
-            <p>Al ser todos los productos personalizados y hechos a mano, te pedimos llenes <a href="Contacto.html">este formulario</a> para que podamos acordar el modelo que buscás, las especifícaciones, método de envío y su valor. </p>
-        <br><br>
-        <h4>Para una mejor experiencia de compra, seleccioná tu ubicación     <button onclick="getLocation()">Aquí</button></h4>
-
-        <p id="demo"></p>
-
-        <script>
-        var x = document.getElementById("demo");
-
-        function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else { 
-            x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-        }
-
-        function showPosition(position) {
-        x.innerHTML = "Latitude: " + position.coords.latitude + 
-        "<br>Longitude: " + position.coords.longitude;
-        }
-        </script>
-   </main>
-
-    <footer>
-        <div class="footer">
-            <div class="centrado">
-                <h4>Diseñada por Valeria Dell'Arciprete y María Funes</h4>
-                <h4>2023 - Todos los derechos reservados.</h4>
-             </div>          
+                </nav>
+            </section>	
         </div>
-    </footer>
 
+        <div class="productos">
+            <img src="img/Friends.png" alt="Friends" width="20%">
+            <img src="img/New Yorker - Reading Girl.png" alt="New Yorker - Reading Girl" width="20%">
+            <img src="img/Jem.png" alt="New Yorker - Reading Girl" width="20%">
+            <img src="img/Mad Men.png" alt="New Yorker - Reading Girl" width="20%">
+        </div>
+
+        <div class="main">
+            <div class="content">
+                <h2>NUESTRO LEMA</h2>
+                <h3>Si la vida te da limones, ¡Hacé Limonada!</h3>
+            </div>
+        <br>
+            <div class="content">
+                <h2>HISTORIA</h2>
+                <p>Hacé Limonada nace en Buenos Aires, en pandemia, a partir de un deseo pospuesto que ahora nos encontraba con tiempo disponible para explorar. De allí su nombre: estábamos en una situación desconocida, nueva y preocupante para todos, pero estábamos dispuestos a sacar lo mejor posible de ella, a exprimir los limones, ponerle algo de dulzor y hacer limonada. Gracias a ustedes, este sueño se transformó en un éxito rotundo muy rápidamente</p>
+            </div>
+        <br>
+            <div class="content">
+                <h2>NUESTROS PRODUCTOS</h2>
+                <p>Cada producto es hecho a mano y personalizado. Podés encontrar: 
+                    <ul>
+                        <li>Agendas diarias, semanales y perpetuas</li>
+                        <li>Cuadernos rayados, cuadriculados y lisos</li>
+                        <li>Recetarios</li>
+                        <li>Bitácoras de viaje</li>
+                    </ul>
+                </p>
+            </div>
+        <br>
+            <div class="content">
+                <h2>¿DÓNDE ESTAMOS?</h2>
+                <p>Nos encontramos en Buenos Aires, pero realizamos envíos a todo el país a través de Correo Argentino</p> 
+            </div>
+        <br>
+            <div class="content">
+                <h2>¿CÓMO COMPRAR?</h2>
+                <p>Al ser todos los productos personalizados y hechos a mano, te pedimos llenes <a href="Contacto.html">este formulario</a> para que podamos acordar el modelo que buscás, las especifícaciones, método de envío y su valor. </p>
+                </div>  
+        <br><br>
+        </div>
+
+        <div class="aside">Seguinos en redes
+            <br><br>
+            <a href="https://twitter.com/HaceLimonada" class="twitter-follow-button" data-show-count="false">@HaceLimonada
+            </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <br><br>
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v17.0" nonce="S8pIRCNQ"></script>
+            <div class="fb-page" data-href="https://www.facebook.com/hacelimonada" data-tabs="timeline" data-width="180" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/hacelimonada" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hacelimonada">hacelimonada</a></blockquote></div>
+        </div>
+
+        <div class="footer">
+            <h4>Diseñado por Hacé Limonada</h4>
+            <h4>2023 - Todos los derechos reservados.</h4>
+        </div>
+    </div>
 </body>
 </html>
