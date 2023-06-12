@@ -1,64 +1,41 @@
 body{
-	font-family: 'Roboto', sans-serif;
-	background-color: #E1F5C4;
-	margin: 1px;
-	font-size: 16px;
-	line-height: 20px;
-	color: #5f5d5d;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/Free-Watercolor-Dots-Background-Digital-Paper-FPTFY-9.jpg);
 }
-
-h2, p {
-	margin: 15px;
+.banner {
+    grid-area: banner;
+    font-size: 16px;
+    text-align: center;
+    background-color: #fff785;
+    padding: 10px;
 }
-
+.banner:hover{
+    transform: scale(1.5)
+}
 .header {
+    grid-area: header;
+    text-align: left;
+    text-underline-position: above;
+    margin: 10px;
+}
+.asideheader {
+    grid-area: asideheader;
     text-align: center;
-	background-image: url(../img/Yellow\ Modern\ Self-Care\ Happy\ Animated\ Instagram\ Story.jpg);
-    color: solid gray;
-    font-size: 24px;
-  }
-
-.footer {
+    padding: 30px;
+}
+.productos{
+    grid-area: productos;
     text-align: center;
-    background-color: #8cbbb2;
-    color: solid gray;
-    font-size: 12px;
 }
-
-.centrado{
-	text-align: center;
-	border: 3px
-	margin: 0 auto;
-	padding: 0 0.8em;
+.menu{
+    grid-area: menu;
 }
-
-#frase{
-		width: 100%;
-		height: 16px;
-		font-weight: bold;
-		color: #FF4E50;
-		position: relative;
-		animation: mymove 10s infinite;
-	  }
-
-@keyframes mymove {
-  from {left: 0;}
-  to {left: 100%;}
-}
-
-.menu-section{
-	padding-bottom: 2em;
-	margin-bottom: 2em;
-	border-bottom: 1px solid hsl(0, 0%);
-}
-
 .menu ul{
 	list-style-type: none;
 	padding: 0;
 	margin:0;
-	background: #1abc9c;
+	background: #4fd3b8;
 }
-
 .menu li a {
 	display: block;
 	text-decoration: none;
@@ -66,135 +43,106 @@ h2, p {
 	color: #380405;
 	padding: .6em 1em;
 }
-
 .menu li a:hover {
 	background:  #fff785;
 	text-decoration-line: underline;
 }
-
- .menu-simple ul{
+.menu-simple ul{
  	display: flex;
  	flex-wrap: wrap;
  	justify-content:space-between;
  }
-
- .menu-simple li{
+.menu-simple li{
  	flex:1 0 auto;
  	text-align: center;
  }
-
- .fondo-imagen {
-	background-image: url("../img/Hacé\ limonada\ Logo.png");
-	height: 100%;
-	margin: 0 auto;
-	padding: 50px;
- }
-
-.cabecera{
-background: #5f5d5d;
-}
-
-.centrado{
-	margin: 0 auto;
-	padding: 0 0.8em;
-}
-
-@media screen and (min-width: 52em){
-	.centrado{
-		max-width: 52em;
-	}
-}
-
-.titulo1{
-	margin: 0 0 1em;
-	padding: 1em 0;
-	font-size: 2em;
-	font-weight: 300;
-	text-align: center;
-	color: white;
-}
-
-.tarjeta{
-	background: white;
-	margin-bottom: 2em;
-	width: 30%;
-}
-
-.cards{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.tarjeta a{
-	color: #5f5d5d;
-	text-decoration: none;
-}
-
-.tarjeta a:hover{
-	box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
-}
-
-.tarjeta-content{
-	padding: 1.4em;
-
-}
-
-.tarjeta-content h2{
-	margin-top: 0;
-	margin-bottom: .5em;
-	font-weight: normal;
-}
-
-.tarjeta-content p{
-	font-size: 95%;
-	position: left;
-}
-
-figure{
-	margin: 0;
-}
-
-img{
-	display: block;
-	border:0;
-	width: 100%;
-	height: auto;
-}
-
-.padre{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.main {
+    grid-area: main;
     text-align: center;
-    padding: 5px;
 }
-
-.header, .footer {
-    flex-grow: 1;
-    flex-basis: 100%;
-    padding: 5px;
+.aside {
+    grid-area: aside;
+    text-align: center;
+    padding: 25px;
 }
-
-/*Cuando tenga 600 px o más...*/
-@media all and (min-width: 600px){
-    .aside{
-        flex: 1 1 auto; /*los elementos izquierda y derecha se posicionan uno al lado del otro ocupando un ancho automático*/
-    }
+.footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: lightgray;
 }
-/*Cuando tenga 800 px o más...*/
-@media all and (min-width: 800px){
-    .articulo{
-        flex: 2 0; /*articulo es 2 veces cada cuadrado izquierda o derecha*/
-    }
-    .izquierda{order:1;}
-    .articulo{order:2;}
-    .derecha{order:3;}
-    .footer{order:4;}
+.content{
+    color: black;
+    border: dotted;
+    border-color: lightseagreen;
+    border-radius: 12px;
+    text-align: left;
+    padding: 0px 10px 5px 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(225,235,237,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(225,235,237,1);
+    box-shadow: 10px 10px 5px 0px rgba(225,235,237,1);
 }
-* {box-sizing:border-box}
-
-table, th, td {
-	border: solid #FF4E50;
-	text-align: center;
+.grid-container{
+    display: grid;
+    grid-template-areas:
+        'banner banner banner banner banner banner banner'
+        'asideheader header header header header header header'
+        'menu menu menu menu menu menu menu'
+        'productos productos productos productos productos productos productos'
+        'main main main main main main aside'
+        'footer footer footer footer footer footer footer';
+    grid-gap: 20px;
+}
+.contenedor{
+    display: grid;
+    grid-template-areas:
+        'caja1 caja1 caja1'
+        'caja2 caja2 caja2';
+    grid-gap: 20px;
+}
+.caja {
+    display: grid;
+    padding: 10px;
+    text-align: left;
+    border: double;
+    border-color: #1abc9c;
+    border-radius: 12px;
+}
+.caja:hover{
+    background-color:#c1f3e9;
+}
+.caja1{
+    grid-row: 1/1
+}
+.caja2 {
+    grid-row: 2/1
+}
+h2, .thumbnail {
+    text-align: center;
+}
+.button{
+    background-color: #1abc9c;
+    size: 24px;
+}
+button:hover{
+    background-color:#f9ec31;
+    text-transform: uppercase;
+}
+table, tr, th, td {
+    align-items: center;
+    text-align: center;
+    border: groove;
+    border-color: red;
+    margin: 0 auto;
+}
+form{
+    color: grey;
+    background-color: whitesmoke;
+    border: dotted;
+    border-color: gray;
+    border-radius: 12px;
+    text-align: left;
+    padding: 0px 5px 10px 5px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(225,235,237,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(225,235,237,1);
+    box-shadow: 10px 10px 5px 0px rgba(225,235,237,1);
 }
