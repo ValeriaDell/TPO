@@ -40,22 +40,27 @@
 
         <div class="main">       
         <form name=myForm action="">
-            <h1style="text-align: center;" >Formulario de Contacto</h1>
+            <h1 style="text-align: center;" >FORMULARIO DE CONTACTO</h1>
+            <br><br>
             <fieldset>
                 <legend>Datos Personales</legend>
+                <br>
 
                 <label for="Nombre">Nombre*: </label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre" size="30" maxlength="20" required>
+                
 
                 <label for="apellido">Apellido*: </label>
                 <input type="text" name="Apellido:" id="Apellido" placeholder="Apellido" size="30" maxlength="20" required>
+                
 
                 <label for="dni">DNI*:</label>
                 <input type="number" placeholder="Sólo números" size="8" maxlength="8" required>
-                <br>
+                <br><br>
 
                 <label for="teléfono">Teléfono: </label>
                 <input type="number" minlength="10">
+                <br>
         <br>
                 <!-- Se valida en js  -->
                 <label for="email">Email*: </label>
@@ -73,6 +78,7 @@
             <fieldset>
 
                 <label for="tipo">Motivo de contacto</label>
+                <br>
                 <select name="tipo" id="tipo">
                     <option value="P" selected>Pedido</option>
                     <option value="C">Consulta</option>
@@ -84,7 +90,7 @@
                 <input type="checkbox" name="producto" id="producto">AGENDA
                 <input type="checkbox" name="producto" id="producto">CUADERNO
                 <input type="checkbox" name="producto" id="producto">RECETARIO
-            <br>
+            <br><br>
                 <label for="contacto">Medio de contacto preferido</label>
                 <input type="radio" name="contacto" id="teléfono">Teléfono
                 <input type="radio" name="contacto" id="email">Email
