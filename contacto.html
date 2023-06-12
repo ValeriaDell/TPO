@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacé Limonada - TPO</title>
-	<meta name="viewport" content="width=device-width , initial-scale=1" >
-    <!-- CSS-->
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="icon" href="img/Hacé limonada Logo.ico">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hacé Limonada - TPO</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,400&family=Sacramento&display=swap" rel="stylesheet">
+        <!-- CSS-->
+        <link rel="stylesheet" href="CSS/styles.css">
+        <!-- Favicon -->
+        <link rel="icon" href="img/Hacé limonada Logo.ico">
+    </head>
 
 <body>
-    <header>
+    <div class="grid-container">
+        <div class="banner">Envíos gratis con tu compra mayor a $8000</div>
+        <div class="asideheader"><img src="img/Hacé limonada Logo.png" alt="Logo Hacé Limonada" width="200px" height="120px"></div>
+
         <div class="header">
             <h1>Hacé Limonada</h1>
-            <p>Cuadernos | Agendas | Recetarios</p>
-            <p>&#9995 Hechos a mano &#9995</p>
+            <h3>Cuadernos | Agendas | Recetarios</h3>
+            <p>Personalizados y hechos a mano</p>
         </div>
-        <div class="Banner">
+
+        <div class="menu">
             <section class="menu-section">
                 <nav class="menu-simple menu">
                     <ul>
-                        <li><a href="index.html">Historia</a></li>
-                        <li><a href="Productos Destacados.html">Productos Destacados</a></li>
+                        <li><a href="index.html">Sobre nosotras</a></li>
+                        <li><a href="productos destacados.html">Productos Destacados</a></li>
                         <li><a href="envíos.html">Envíos</a></li>
-                        <li><a href="Contacto.html">Contacto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                     </ul>
-                </nav>	
-            </section>
+                </nav>
+            </section>	
         </div>
-    </header>
 
-    <main>
-        <div class="centrado">
-            <h1>Formulario de Contacto</h1>
-        </div>
+        <div class="main">       
         <form name=myForm action="">
+            <h1>Formulario de Contacto</h1>
             <fieldset>
                 <legend>Datos Personales</legend>
 
-                <label for="Nombre">Nombre: </label>
+                <label for="Nombre">Nombre*: </label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre" size="30" maxlength="20" required>
 
-                <label for="apellido">Apellido: </label>
+                <label for="apellido">Apellido*: </label>
                 <input type="text" name="Apellido:" id="Apellido" placeholder="Apellido" size="30" maxlength="20" required>
 
-                <label for="dni">DNI:</label>
-                <input type="number" placeholder="Sólo números">
+                <label for="dni">DNI*:</label>
+                <input type="number" placeholder="Sólo números" size="8" maxlength="8" required>
 
                 <label for="teléfono">Teléfono: </label>
                 <input type="number" minlength="10">
-<br>
-                <label for="mail">Mail: </label>
-                <input type="email">
+        <br>
+                <!-- Se valida en js  -->
+                <label for="email">Email*: </label>
+                <input type="email" name="email" id="email" required>
 
                 <!-- Debe ser mayor de 18 años -->
                 <label for="fecha de nacimiento">Fecha de Nacimiento: </label>
@@ -72,12 +77,12 @@
                     <option value="C">Consulta</option>
                     <option value="R">Reclamo</option>
                     <option value="O">Otros</option>
-                </select>   
+                </select>
             <br>
                 <label for="producto">Producto: </label>
                 <input type="checkbox" name="producto" id="producto">AGENDA
                 <input type="checkbox" name="producto" id="producto">CUADERNO
-                <input type="checkbox" name="producto" id="producto">RECETARIO  
+                <input type="checkbox" name="producto" id="producto">RECETARIO
             <br>
                 <label for="contacto">Medio de contacto preferido</label>
                 <input type="radio" name="contacto" id="teléfono">Teléfono
@@ -87,24 +92,31 @@
             <br>
                 <label for="comentarios">Deje aquí sus comentarios:</label>
             <br>
-                <textarea name="comentarios" id="comentarios" placeholder="Por favor detallá las especificaciones de tu pedido" cols="100" rows="10"></textarea>
+                <textarea name="comentarios" id="comentarios" placeholder="Por favor detallá las especificaciones de tu pedido" cols="60" rows="10"></textarea>
 
             <br><br>
                 <input type="submit" value="Enviar formulario">
                 <input type="reset" value="Borrar datos">
         </form>
         <br><br>
+        </div>  
 
-    </main>
-    
-    <footer>
+    <div class="aside">Seguinos en redes
+        <br><br>
+        <a href="https://twitter.com/HaceLimonada" class="twitter-follow-button" data-show-count="false">@HaceLimonada
+        </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <br><br>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v17.0" nonce="S8pIRCNQ"></script>
+        <div class="fb-page" data-href="https://www.facebook.com/hacelimonada" data-tabs="timeline" data-width="180" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/hacelimonada" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hacelimonada">hacelimonada</a></blockquote></div>
+    </div>
+
         <div class="footer">
-            <div class="centrado">
-                <h4>Diseñada por Valeria Dell'Arciprete y María Funes</h4>
-                <h4>2023 - Todos los derechos reservados.</h4>
-             </div>
+            <h4>Diseñado por Hacé Limonada</h4>
+            <h4>2023 - Todos los derechos reservados.</h4>
         </div>
-    </footer>
-    
+
+    </div>
+    <script src="Js/script.js"></script>
 </body>
 </html>
