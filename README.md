@@ -4,6 +4,7 @@ Página Web Emprendimiento Hacé Limonada
 Se crean 4 htmls (Index, Productos Destacados, Envíos, Contacto)
 Se utilizan etiquetas semánticas
 Contiene un formulario con validación de campos en Js
+Se agrega un API de geolocalizacion
 Se utiliza un iFrame, FontAwesome, Favicon y Google Font 'Roboto'
 Se maqueta en Grid
 Se dan 3 puntos de corte
