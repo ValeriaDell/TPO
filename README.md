@@ -11,3 +11,4 @@ Se dan 3 puntos de corte.
 Se introducen animaciones hover en el banner y en los botones.
 Se sube a GitHub y se hace el deploy con Netlify.
 Se utiliza la paleta de colores del logo del emprendimiento.
+Se agrega un carrito de compras integrado con flask, y con sqlite3 (python)
